@@ -1,2 +1,2 @@
-# first_website
-same as name
+# bandpage
+following tutorial from web dev simplified
