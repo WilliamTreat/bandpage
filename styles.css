@@ -48,3 +48,18 @@ html, body {
   background-size: cover;
   padding-bottom: 30px;
 }
+
+.band-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  color: red;
+  /* font-family: "Booter - Zero Zero"; */
+  font-family: cursive;
+  font-weight: normal;
+  color: white;
+}
+
+.band-name-large {
+  font-size: 6em;
+}
