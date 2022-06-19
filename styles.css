@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  font-family: Raleway;  
-  /* color: rgb(21, 13, 13); */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;  
+  color: rgb(21, 13, 13);
 }
 
 html, body {
@@ -52,7 +52,7 @@ html, body {
 .band-name {
   text-align: center;
   margin: 0;
-  font-size: 4em;
+  font-size: 2em;
   color: red;
   /* font-family: "Booter - Zero Zero"; */
   font-family: cursive;
@@ -62,4 +62,119 @@ html, body {
 
 .band-name-large {
   font-size: 6em;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.about-band-image {
+float: left;
+height: 200px;
+width: 200px;
+margin: 15px;
+border-radius: 40%;
+}
+
+.main-footer {
+  background-color: aquamarine;
+  color: wheat;
+  padding: .25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+footer-nav li {
+  padding: 0 .5em;
+}
+
+.footer-nav img {
+  width: 60px;
+  height: 30px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid aquamarine;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: aquamarine;
+  font-size: 4em;
+  border-radius: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+
+}
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border-bottom: none;
+}
+
+tour-item {
+  display: inline-block;
+  padding-right: .5em;
+}
+.tour-name {
+  color: #555;
+  font-weight: bold;
+  width: 50%;
+}
+
+.tour-pattern {
+  width: 20%;
+}
+
+.tour-lesson {
+  width: 20%;
+}
+
+.tour-btn {
+  max-width: 19%;
 }
