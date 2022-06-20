@@ -151,6 +151,8 @@ footer-nav li {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
   margin-bottom: 1em;
+  text-align: center;
+  padding-right: 5em;
 }
 
 .tour-row:last-child {
@@ -159,7 +161,8 @@ footer-nav li {
 
 tour-item {
   display: inline-block;
-  padding-right: .5em;
+  padding-right: 5em;
+  margin: 20px;
 }
 .tour-name {
   color: #555;
@@ -177,4 +180,16 @@ tour-item {
 
 .tour-btn {
   max-width: 19%;
+}
+
+.btn-primary {
+  color: white;
+  background-color: aqua;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: blue;
 }
