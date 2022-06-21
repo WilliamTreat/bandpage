@@ -3,12 +3,13 @@
 * {
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;  
-  color: rgb(21, 13, 13);
+  color: #777;
 }
 
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 .nav ul {
@@ -53,9 +54,6 @@ html, body {
   text-align: center;
   margin: 0;
   font-size: 2em;
-  color: red;
-  /* font-family: "Booter - Zero Zero"; */
-  font-family: cursive;
   font-weight: normal;
   color: white;
 }
@@ -75,6 +73,7 @@ html, body {
 }
 
 .section-header {
+  font-weight: normal;
   color: #333;
   text-align: center;
   font-size: 2.5em;
@@ -104,7 +103,7 @@ border-radius: 40%;
   text-align: end;
 }
 
-footer-nav li {
+.footer-nav li {
   padding: 0 .5em;
 }
 
@@ -116,7 +115,7 @@ footer-nav li {
 .btn {
   text-align: center;
   vertical-align: middle;
-  padding: .67em;
+  padding: .67em .67em;
   cursor: pointer;
 }
 
@@ -145,25 +144,36 @@ footer-nav li {
   padding: 0;
   width: 100px;
   height: 100px;
-
+  text-align: center;
 }
+
+.btn-primary {
+  color: white;
+  background-color: aquamarine;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: aqua;
+}
+
 .tour-row {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  padding-right: 5em;
+  margin-bottom: 1em;  
 }
 
 .tour-row:last-child {
-  border-bottom: none;
+  border: none;
 }
 
-tour-item {
+.tour-item {
   display: inline-block;
-  padding-right: 5em;
-  margin: 20px;
+  padding-right: .5em;
 }
+
 .tour-name {
   color: #555;
   font-weight: bold;
@@ -182,14 +192,125 @@ tour-item {
   max-width: 19%;
 }
 
-.btn-primary {
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+
+}
+
+.shop-item-image {
+  height: auto; /*changed from tutorial */
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+
+
+
+
+
+
+
+
+/* added blank lines to match tutorial line numbers */
+} 
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.btn-danger {
   color: white;
-  background-color: aqua;
+  background-color: red;
   border: none;
   border-radius: .3em;
   font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: blue;
+.btn-danger:hover {
+  background-color: darkred;
+  }
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid aquamarine;
+  background-color: #bbb;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1ps solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
 }
