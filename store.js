@@ -54,7 +54,7 @@ function addToCartClicked(event) {
   var shopItem = button.parentElement.parentElement
   var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
   var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].imageSrc
+  var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
   addItemToCart(title, price, imageSrc)
   updateCartTotal()
 }
@@ -77,7 +77,7 @@ function addItemToCart(title, price, imageSrc) {
     </div>
     <span class="cart-price cart-column">${price}</span>
     <div class="cart-quantity cart-column">
-      <input class="cart-quantity-input" type="number" value="2">
+      <input class="cart-quantity-input" type="number" value="1">
       <button class="btn btn-danger" type="button">REMOVE</button>
     </div>`
   cartRow.innerHTML = cartRowContents
@@ -96,7 +96,7 @@ function updateCartTotal() {
     var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
     var price = parseFloat(priceElement.innerText.replace('$', ''))
     var quantity = quantityElement.value
-    total = total= (price * quantity)
+    total = total + (price * quantity)
   }
   total = Math.round(total * 100) / 100
 document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
